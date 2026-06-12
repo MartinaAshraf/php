@@ -1,0 +1,174 @@
+The objectives of electronic publishing are concentrated in:
+1. Accelerate scientific research processes.
+2. Providing academic commercial publishing. 
+3. Putting the intellectual production of somecountries in the form of electronic containers.
+4. Deepening e-commerce opportunities
+
+The Tools of Electronic Publishing
+1. Internet programming
+2. Microsoft Office Program
+3. Flash Action Program
+4. Acrobat Reader PDF
+5. Electronic books Programs
+
+Website programming languages
+Server sides:
+PHP, Perl, ASP, CGI, JSP, XML
+Client sides:
+Java, Java Applet, DHTML, HTML, CSS
+
+Web Server : server programs 
+. Apache 
+• IIS – Internet Information Server • Sun Java System Web Server
+• Zeus Web Server
+
+Web Client
+• Internet Explorer
+• Google Chrome
+• Crazy Browser
+• Mozilla Firefox
+
+Server Types
+1. File Server
+2. Web Server
+3. Print Server
+4. Communication Server
+5. E-mail Server
+
+Internet Connection!
+1. PC 
+2. Phone line 
+3. Service Provider 
+4. Browser
+5. Network Card 
+6. Modem
+7. Leased Lines
+
+browser reads the HTML code and converts it into a web page
+
+Types of web pages
+•Static Pages 
+•Dynamic Pages
+
+====oop====
+keep the PHP code DRY "Don't Repeat Yourself"
+
+create full reusable applications with less code
+
+===php===
+dynamic websites
+easiest and fastest
+Integrate with databases
+Free
+Yahoo handles 3.5 billion transactions per day using PHP
+
+Need to Deal with PHP
+• Web server as Apache
+• PHP Compiler
+• MySQL Database Wizard
+• Text editor as Notepad++
+• Web browser as IE, Firefox
+• PHP application to upload files if the server is far
+• Appserver Software contains
+(Apache, PHP, MySQL).
+• Wampserver Software contains
+(Apache, PHP, MySQL).
+
+C:\wamp\www
+C:\appserv\www
+(Wampserver / Appserver) with name first.php
+
+execute the php program
+http://localhost/first.php
+http://127.0.0.1/first.php
+
+====variable===
+8 types 
+Boolean,integer,Real,String,NULL -> one value
+• Array • Object -> more than one value
+$x_name_9 ->first letter after the sign cannot be a number
+
+===form===
+container for different types(text fields,checkboxes, radio buttons, submit buttons)
+<input type=submit> submitting the form data to a form-handler."The form-handler is typically a file on the server with a script for processing input data."
+لو نسيتي تكتبي name في الـ input، القيمة اللي المستخدم يدخلها لن تُرسل للسيرفر.
+
+• The target attribute specifies where to display the response that is received after submitting the form
+_blank :displayed in a new window or tab
+_self : current window
+_parent :  displayed in the parent frame
+_top : displayed in the full body of the window
+framename :displayed in a named iframe
+*****default HTTP method GET.********
+
+NEVER use GET to send sensitive data! data is visible in the URL!
+URL is limited (2048 character)
+Useful for bookmark the result
+GET is good for non-secure data, like query strings in Google
+
+==post==
+no size limitations send large amounts
+POST cannot be bookmarked
+-----------------
+switch : able to compare two strings and execute the required statement
+loop : If the the condition is not met, the loop will execute an infinite number of times
+while :simplest form of looping statement
+Do-while : بتطبع مره لازم حتي لو الشرط متحققش
+Foreach : formalized method ,array is a collection of values referenced by keys.
+------------------
+array :stores multiple values in one single variable
+------------------
+php provide more than 1000 functions
+
+Types of functions in Php:
+• Built-in Functions
+• User Defined Functions
+
+isset($n) بتقولي في عنصر ولا لا و لو في بترجع true ف لو طبعتها هتطبع ترو  1
+  لو flase او null مش هتطبع حاجه و مش هتدي ايرور 
+
+
+exit the program :stopping the process of reading the code by the browser
+==================================
+User Defined Functions
+:is a block of statements
+not execute automatically when page load 
+will be executed by a call to the function
+function name: must start with a letter or an underscore.
+ Function names :NOT case-sensitive
+ declare(strict_types=1); This must be on the very first line of the PHP file
+ لو ضفت رقم جوه "" او نوع مختلف من الداتا تيب عن اللى كتباه فالفانكشن و هي موجوده هتديني  fatal error 
+
+ ===========================================
+ ---------MySQL-----------------------
+
+Basic Steps to Process DB: 
+1. Connecting to the database server  $con = mysqli_connect($host, $usern, $pswd);
+2. Determine the required databases   $db=mysqli_select_db($Connection_var ,$Database_name)
+3. Formation of SQL statement         $sql=“create database DBASENAME”;
+4. Execution of SQL statement         mysqli_query($con, $sql);
+5. Display the required data of record/ records 
+6. Closing the connection
+Connect → Select DB → Write SQL → Execute → Display → Close.
+
+Connecting to the database server:
+• Database Server
+• Username
+• Password
+• Database name
+
+
+PHP Session : session is a way to store information (in variables) to be used across multiple pages
+              By default, session variables last until the user closes the browser
+session variable :hold information about "one single user", and are "available to all pages" in "one application"
+used to protect the site from entering the users without login
+start a session in PHP:
+1. Use the session_start Function
+2. Automatically Start a Session
+
+session_start
+function must be called at the beginning before any output is sent to the browser.Otherwise, you’ll encounter error.
+
+Automatically Start a Session
+php.ini file :tart a session automatically (auto_start). By default, is 0  and you can set it to 1 to enable
+session.auto_start = 1
